@@ -25,15 +25,8 @@ const Header = () => (
         </Link>                
         <Link href="/MyList">
             <a >티비 프로그램</a>
-        </Link>                        
-        <style jsx>{`
-        a {color:#e5e5e5;
-            text-decoration:none;
-            font-size:14px;
-        }
-    `}
+        </Link>                                
 
-    </style>
     </div>
 )
 
