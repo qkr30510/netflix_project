@@ -9,24 +9,139 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-var _this = undefined,
+/* harmony import */ var _babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
+
+
+var _HeaderStyle,
+    _this = undefined,
     _jsxFileName = "C:\\Users\\SAMSUNG\\Desktop\\html\\netflix_project\\components\\Header.js";
 
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
-var HeaderStyle = {
+var HeaderStyle = (_HeaderStyle = {
   display: "flex",
-  flex: 1,
-  background: "#141414",
+  flex: "1",
+  justifyContent: "space-around",
+  background: "linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 10%, rgba(0, 0, 0, 0))",
   height: "68px",
-  alignItems: "center",
-  justifyContent: "spaceAround"
+  alignItems: "center"
+}, Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_HeaderStyle, "justifyContent", "spaceAround"), Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_HeaderStyle, "color", "#fff"), Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_HeaderStyle, "padding", "0 4%"), _HeaderStyle);
+var li = {
+  "float": "left",
+  "margin-left": "20px"
 };
+var a = {
+  color: "#fff"
+};
+var rightNavi = {
+  "margin-left": "auto"
+};
+var logo = {
+  "margin-righ": "25px"
+};
+var pageNameList = [{
+  id: 1,
+  koName: "홈",
+  enName: "/"
+}, {
+  id: 2,
+  koName: "티비 프로그램",
+  enName: "/TvProgram"
+}, {
+  id: 3,
+  koName: "영화",
+  enName: "/Movie"
+}, {
+  id: 4,
+  koName: "최신 콘텐츠",
+  enName: "/LatestContents"
+}, {
+  id: 5,
+  koName: "티비 프로그램",
+  enName: "/MyList"
+}];
+var pageNameList2 = [{
+  id: 6,
+  koName: "돋",
+  enName: "/"
+}, {
+  id: 7,
+  koName: "키즈",
+  enName: "/TvProgram"
+}, {
+  id: 8,
+  koName: "선물",
+  enName: "/Movie"
+}, {
+  id: 9,
+  koName: "벨",
+  enName: "/LatestContents"
+}, {
+  id: 5,
+  koName: "티비 프로그램",
+  enName: "/MyList"
+}];
+var pageName = pageNameList.map(function (pageNames) {
+  return __jsx("li", {
+    key: pageNames.id,
+    style: li,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47,
+      columnNumber: 3
+    }
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: pageNames.enName,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48,
+      columnNumber: 5
+    }
+  }, __jsx("a", {
+    style: a,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 49,
+      columnNumber: 7
+    }
+  }, pageNames.koName)));
+});
+var pageName2 = pageNameList2.map(function (pageNames) {
+  return __jsx("li", {
+    key: pageNames.id,
+    style: li,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 55,
+      columnNumber: 3
+    }
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: pageNames.enName,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 56,
+      columnNumber: 5
+    }
+  }, __jsx("a", {
+    style: a,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 57,
+      columnNumber: 7
+    }
+  }, pageNames.koName)));
+});
 
 var Header = function Header() {
   return __jsx("div", {
@@ -34,85 +149,40 @@ var Header = function Header() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
+      lineNumber: 63,
+      columnNumber: 3
+    }
+  }, __jsx("h1", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 64,
       columnNumber: 5
     }
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
-      columnNumber: 9
+      lineNumber: 65,
+      columnNumber: 7
     }
-  }, __jsx("a", {
+  }, "\uB85C\uACE0\uC790\uB9AC")), __jsx("ul", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15,
-      columnNumber: 13
+      lineNumber: 67,
+      columnNumber: 5
     }
-  }, "\uD648")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/TvProgram",
+  }, pageName), __jsx("ul", {
+    style: rightNavi,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17,
-      columnNumber: 9
+      lineNumber: 68,
+      columnNumber: 5
     }
-  }, __jsx("a", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18,
-      columnNumber: 13
-    }
-  }, "\uD2F0\uBE44 \uD504\uB85C\uADF8\uB7A8")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/Movie",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20,
-      columnNumber: 9
-    }
-  }, __jsx("a", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21,
-      columnNumber: 13
-    }
-  }, "\uC601\uD654")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/LatestContents",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23,
-      columnNumber: 9
-    }
-  }, __jsx("a", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 24,
-      columnNumber: 13
-    }
-  }, "\uCD5C\uC2E0 \uCF58\uD150\uCE20")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/MyList",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 26,
-      columnNumber: 9
-    }
-  }, __jsx("a", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 27,
-      columnNumber: 13
-    }
-  }, "\uD2F0\uBE44 \uD504\uB85C\uADF8\uB7A8")));
+  }, pageName2));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Header);
@@ -348,6 +418,33 @@ function _createClass(Constructor, protoProps, staticProps) {
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/defineProperty.js ***!
+  \*******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _defineProperty; });
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime/helpers/esm/extends.js":
 /*!************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/esm/extends.js ***!
@@ -422,66 +519,6 @@ function _inherits(subClass, superClass) {
     }
   });
   if (superClass) Object(_setPrototypeOf__WEBPACK_IMPORTED_MODULE_0__["default"])(subClass, superClass);
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js":
-/*!****************************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js ***!
-  \****************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _objectWithoutProperties; });
-/* harmony import */ var _objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
-
-function _objectWithoutProperties(source, excluded) {
-  if (source == null) return {};
-  var target = Object(_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(source, excluded);
-  var key, i;
-
-  if (Object.getOwnPropertySymbols) {
-    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
-
-    for (i = 0; i < sourceSymbolKeys.length; i++) {
-      key = sourceSymbolKeys[i];
-      if (excluded.indexOf(key) >= 0) continue;
-      if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
-      target[key] = source[key];
-    }
-  }
-
-  return target;
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js":
-/*!*********************************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js ***!
-  \*********************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _objectWithoutPropertiesLoose; });
-function _objectWithoutPropertiesLoose(source, excluded) {
-  if (source == null) return {};
-  var target = {};
-  var sourceKeys = Object.keys(source);
-  var key, i;
-
-  for (i = 0; i < sourceKeys.length; i++) {
-    key = sourceKeys[i];
-    if (excluded.indexOf(key) >= 0) continue;
-    target[key] = source[key];
-  }
-
-  return target;
 }
 
 /***/ }),
@@ -855,7 +892,7 @@ module.exports = __webpack_require__(/*! regenerator-runtime */ "./node_modules/
 
 exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
 // Module
-exports.push([module.i, "html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline; }\n\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {\n  display: block; }\n\nbody {\n  line-height: 1; }\n\nol, ul {\n  list-style: none; }\n\nblockquote, q {\n  quotes: none; }\n\nblockquote:before, blockquote:after {\n  content: '';\n  content: none; }\n\nq:before, q:after {\n  content: '';\n  content: none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\na {\n  text-decoration: none;\n  color: #000; }\n", "",{"version":3,"sources":["C:/Users/SAMSUNG/Desktop/html/netflix_project/styles/reset.scss"],"names":[],"mappings":"AAAA;EACE,SAAS;EACT,UAAU;EACV,SAAS;EACT,eAAe;EACf,aAAa;EACb,wBAAwB,EAAA;;AAE1B,gDAAA;AAEA;EACE,cAAc,EAAA;;AAEhB;EACE,cAAc,EAAA;;AAEhB;EACE,gBAAgB,EAAA;;AAElB;EACE,YAAY,EAAA;;AAEd;EAEI,WAAW;EACX,aAAa,EAAA;;AAEjB;EAEI,WAAW;EACX,aAAa,EAAA;;AAEjB;EACE,yBAAyB;EACzB,iBAAiB,EAAA;;AAGjB;EACE,qBAAqB;EACrB,WAAU,EAAA","file":"reset.scss","sourcesContent":["html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {\r\n  margin: 0;\r\n  padding: 0;\r\n  border: 0;\r\n  font-size: 100%;\r\n  font: inherit;\r\n  vertical-align: baseline; }\r\n\r\n/* HTML5 display-role reset for older browsers */\r\n\r\narticle, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {\r\n  display: block; }\r\n\r\nbody {\r\n  line-height: 1; }\r\n\r\nol, ul {\r\n  list-style: none; }\r\n\r\nblockquote, q {\r\n  quotes: none; }\r\n\r\nblockquote {\r\n  &:before, &:after {\r\n    content: '';\r\n    content: none; } }\r\n\r\nq {\r\n  &:before, &:after {\r\n    content: '';\r\n    content: none; } }\r\n\r\ntable {\r\n  border-collapse: collapse;\r\n  border-spacing: 0; \r\n}\r\n  \r\n  a{\r\n    text-decoration: none;\r\n    color:#000;\r\n\r\n  }"]}]);
+exports.push([module.i, "html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline; }\n\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {\n  display: block; }\n\nbody {\n  line-height: 1; }\n\nol, ul {\n  list-style: none; }\n\nblockquote, q {\n  quotes: none; }\n\nblockquote:before, blockquote:after {\n  content: '';\n  content: none; }\n\nq:before, q:after {\n  content: '';\n  content: none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\na {\n  text-decoration: none;\n  color: #000; }\n\nul, li, ol {\n  list-style: none; }\n", "",{"version":3,"sources":["C:/Users/SAMSUNG/Desktop/html/netflix_project/styles/reset.scss"],"names":[],"mappings":"AAAA;EACE,SAAS;EACT,UAAU;EACV,SAAS;EACT,eAAe;EACf,aAAa;EACb,wBAAwB,EAAA;;AAE1B,gDAAA;AAEA;EACE,cAAc,EAAA;;AAEhB;EACE,cAAc,EAAA;;AAEhB;EACE,gBAAgB,EAAA;;AAElB;EACE,YAAY,EAAA;;AAEd;EAEI,WAAW;EACX,aAAa,EAAA;;AAEjB;EAEI,WAAW;EACX,aAAa,EAAA;;AAEjB;EACE,yBAAyB;EACzB,iBAAiB,EAAA;;AAGjB;EACE,qBAAqB;EACrB,WAAU,EAAA;;AAGZ;EACE,gBAAgB,EAAA","file":"reset.scss","sourcesContent":["html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {\r\n  margin: 0;\r\n  padding: 0;\r\n  border: 0;\r\n  font-size: 100%;\r\n  font: inherit;\r\n  vertical-align: baseline; }\r\n\r\n/* HTML5 display-role reset for older browsers */\r\n\r\narticle, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {\r\n  display: block; }\r\n\r\nbody {\r\n  line-height: 1; }\r\n\r\nol, ul {\r\n  list-style: none; }\r\n\r\nblockquote, q {\r\n  quotes: none; }\r\n\r\nblockquote {\r\n  &:before, &:after {\r\n    content: '';\r\n    content: none; } }\r\n\r\nq {\r\n  &:before, &:after {\r\n    content: '';\r\n    content: none; } }\r\n\r\ntable {\r\n  border-collapse: collapse;\r\n  border-spacing: 0; \r\n}\r\n  \r\n  a{\r\n    text-decoration: none;\r\n    color:#000;\r\n\r\n  }\r\n  ul,li,ol{\r\n    list-style: none;\r\n  }"]}]);
 
 
 /***/ }),
@@ -2328,7 +2365,7 @@ var Router = /*#__PURE__*/function () {
             __N_SSP = routeInfo.__N_SSP;
 
         if (true) {
-          var _require = __webpack_require__(/*! react-is */ "./node_modules/react-is/index.js"),
+          var _require = __webpack_require__(/*! react-is */ "./node_modules/next/node_modules/react-is/index.js"),
               isValidElementType = _require.isValidElementType;
 
           if (!isValidElementType(Component)) {
@@ -3065,6 +3102,262 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 /***/ }),
 
+/***/ "./node_modules/next/node_modules/react-is/cjs/react-is.development.js":
+/*!*****************************************************************************!*\
+  !*** ./node_modules/next/node_modules/react-is/cjs/react-is.development.js ***!
+  \*****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/** @license React v16.8.6
+ * react-is.development.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+
+
+
+
+if (true) {
+  (function() {
+'use strict';
+
+Object.defineProperty(exports, '__esModule', { value: true });
+
+// The Symbol used to tag the ReactElement-like types. If there is no native Symbol
+// nor polyfill, then a plain number is used for performance.
+var hasSymbol = typeof Symbol === 'function' && Symbol.for;
+
+var REACT_ELEMENT_TYPE = hasSymbol ? Symbol.for('react.element') : 0xeac7;
+var REACT_PORTAL_TYPE = hasSymbol ? Symbol.for('react.portal') : 0xeaca;
+var REACT_FRAGMENT_TYPE = hasSymbol ? Symbol.for('react.fragment') : 0xeacb;
+var REACT_STRICT_MODE_TYPE = hasSymbol ? Symbol.for('react.strict_mode') : 0xeacc;
+var REACT_PROFILER_TYPE = hasSymbol ? Symbol.for('react.profiler') : 0xead2;
+var REACT_PROVIDER_TYPE = hasSymbol ? Symbol.for('react.provider') : 0xeacd;
+var REACT_CONTEXT_TYPE = hasSymbol ? Symbol.for('react.context') : 0xeace;
+var REACT_ASYNC_MODE_TYPE = hasSymbol ? Symbol.for('react.async_mode') : 0xeacf;
+var REACT_CONCURRENT_MODE_TYPE = hasSymbol ? Symbol.for('react.concurrent_mode') : 0xeacf;
+var REACT_FORWARD_REF_TYPE = hasSymbol ? Symbol.for('react.forward_ref') : 0xead0;
+var REACT_SUSPENSE_TYPE = hasSymbol ? Symbol.for('react.suspense') : 0xead1;
+var REACT_MEMO_TYPE = hasSymbol ? Symbol.for('react.memo') : 0xead3;
+var REACT_LAZY_TYPE = hasSymbol ? Symbol.for('react.lazy') : 0xead4;
+
+function isValidElementType(type) {
+  return typeof type === 'string' || typeof type === 'function' ||
+  // Note: its typeof might be other than 'symbol' or 'number' if it's a polyfill.
+  type === REACT_FRAGMENT_TYPE || type === REACT_CONCURRENT_MODE_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || typeof type === 'object' && type !== null && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE);
+}
+
+/**
+ * Forked from fbjs/warning:
+ * https://github.com/facebook/fbjs/blob/e66ba20ad5be433eb54423f2b097d829324d9de6/packages/fbjs/src/__forks__/warning.js
+ *
+ * Only change is we use console.warn instead of console.error,
+ * and do nothing when 'console' is not supported.
+ * This really simplifies the code.
+ * ---
+ * Similar to invariant but only logs a warning if the condition is not met.
+ * This can be used to log issues in development environments in critical
+ * paths. Removing the logging code for production environments will keep the
+ * same logic and follow the same code paths.
+ */
+
+var lowPriorityWarning = function () {};
+
+{
+  var printWarning = function (format) {
+    for (var _len = arguments.length, args = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+      args[_key - 1] = arguments[_key];
+    }
+
+    var argIndex = 0;
+    var message = 'Warning: ' + format.replace(/%s/g, function () {
+      return args[argIndex++];
+    });
+    if (typeof console !== 'undefined') {
+      console.warn(message);
+    }
+    try {
+      // --- Welcome to debugging React ---
+      // This error was thrown as a convenience so that you can use this stack
+      // to find the callsite that caused this warning to fire.
+      throw new Error(message);
+    } catch (x) {}
+  };
+
+  lowPriorityWarning = function (condition, format) {
+    if (format === undefined) {
+      throw new Error('`lowPriorityWarning(condition, format, ...args)` requires a warning ' + 'message argument');
+    }
+    if (!condition) {
+      for (var _len2 = arguments.length, args = Array(_len2 > 2 ? _len2 - 2 : 0), _key2 = 2; _key2 < _len2; _key2++) {
+        args[_key2 - 2] = arguments[_key2];
+      }
+
+      printWarning.apply(undefined, [format].concat(args));
+    }
+  };
+}
+
+var lowPriorityWarning$1 = lowPriorityWarning;
+
+function typeOf(object) {
+  if (typeof object === 'object' && object !== null) {
+    var $$typeof = object.$$typeof;
+    switch ($$typeof) {
+      case REACT_ELEMENT_TYPE:
+        var type = object.type;
+
+        switch (type) {
+          case REACT_ASYNC_MODE_TYPE:
+          case REACT_CONCURRENT_MODE_TYPE:
+          case REACT_FRAGMENT_TYPE:
+          case REACT_PROFILER_TYPE:
+          case REACT_STRICT_MODE_TYPE:
+          case REACT_SUSPENSE_TYPE:
+            return type;
+          default:
+            var $$typeofType = type && type.$$typeof;
+
+            switch ($$typeofType) {
+              case REACT_CONTEXT_TYPE:
+              case REACT_FORWARD_REF_TYPE:
+              case REACT_PROVIDER_TYPE:
+                return $$typeofType;
+              default:
+                return $$typeof;
+            }
+        }
+      case REACT_LAZY_TYPE:
+      case REACT_MEMO_TYPE:
+      case REACT_PORTAL_TYPE:
+        return $$typeof;
+    }
+  }
+
+  return undefined;
+}
+
+// AsyncMode is deprecated along with isAsyncMode
+var AsyncMode = REACT_ASYNC_MODE_TYPE;
+var ConcurrentMode = REACT_CONCURRENT_MODE_TYPE;
+var ContextConsumer = REACT_CONTEXT_TYPE;
+var ContextProvider = REACT_PROVIDER_TYPE;
+var Element = REACT_ELEMENT_TYPE;
+var ForwardRef = REACT_FORWARD_REF_TYPE;
+var Fragment = REACT_FRAGMENT_TYPE;
+var Lazy = REACT_LAZY_TYPE;
+var Memo = REACT_MEMO_TYPE;
+var Portal = REACT_PORTAL_TYPE;
+var Profiler = REACT_PROFILER_TYPE;
+var StrictMode = REACT_STRICT_MODE_TYPE;
+var Suspense = REACT_SUSPENSE_TYPE;
+
+var hasWarnedAboutDeprecatedIsAsyncMode = false;
+
+// AsyncMode should be deprecated
+function isAsyncMode(object) {
+  {
+    if (!hasWarnedAboutDeprecatedIsAsyncMode) {
+      hasWarnedAboutDeprecatedIsAsyncMode = true;
+      lowPriorityWarning$1(false, 'The ReactIs.isAsyncMode() alias has been deprecated, ' + 'and will be removed in React 17+. Update your code to use ' + 'ReactIs.isConcurrentMode() instead. It has the exact same API.');
+    }
+  }
+  return isConcurrentMode(object) || typeOf(object) === REACT_ASYNC_MODE_TYPE;
+}
+function isConcurrentMode(object) {
+  return typeOf(object) === REACT_CONCURRENT_MODE_TYPE;
+}
+function isContextConsumer(object) {
+  return typeOf(object) === REACT_CONTEXT_TYPE;
+}
+function isContextProvider(object) {
+  return typeOf(object) === REACT_PROVIDER_TYPE;
+}
+function isElement(object) {
+  return typeof object === 'object' && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
+}
+function isForwardRef(object) {
+  return typeOf(object) === REACT_FORWARD_REF_TYPE;
+}
+function isFragment(object) {
+  return typeOf(object) === REACT_FRAGMENT_TYPE;
+}
+function isLazy(object) {
+  return typeOf(object) === REACT_LAZY_TYPE;
+}
+function isMemo(object) {
+  return typeOf(object) === REACT_MEMO_TYPE;
+}
+function isPortal(object) {
+  return typeOf(object) === REACT_PORTAL_TYPE;
+}
+function isProfiler(object) {
+  return typeOf(object) === REACT_PROFILER_TYPE;
+}
+function isStrictMode(object) {
+  return typeOf(object) === REACT_STRICT_MODE_TYPE;
+}
+function isSuspense(object) {
+  return typeOf(object) === REACT_SUSPENSE_TYPE;
+}
+
+exports.typeOf = typeOf;
+exports.AsyncMode = AsyncMode;
+exports.ConcurrentMode = ConcurrentMode;
+exports.ContextConsumer = ContextConsumer;
+exports.ContextProvider = ContextProvider;
+exports.Element = Element;
+exports.ForwardRef = ForwardRef;
+exports.Fragment = Fragment;
+exports.Lazy = Lazy;
+exports.Memo = Memo;
+exports.Portal = Portal;
+exports.Profiler = Profiler;
+exports.StrictMode = StrictMode;
+exports.Suspense = Suspense;
+exports.isValidElementType = isValidElementType;
+exports.isAsyncMode = isAsyncMode;
+exports.isConcurrentMode = isConcurrentMode;
+exports.isContextConsumer = isContextConsumer;
+exports.isContextProvider = isContextProvider;
+exports.isElement = isElement;
+exports.isForwardRef = isForwardRef;
+exports.isFragment = isFragment;
+exports.isLazy = isLazy;
+exports.isMemo = isMemo;
+exports.isPortal = isPortal;
+exports.isProfiler = isProfiler;
+exports.isStrictMode = isStrictMode;
+exports.isSuspense = isSuspense;
+  })();
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/next/node_modules/react-is/index.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/next/node_modules/react-is/index.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+if (false) {} else {
+  module.exports = __webpack_require__(/*! ./cjs/react-is.development.js */ "./node_modules/next/node_modules/react-is/cjs/react-is.development.js");
+}
+
+
+/***/ }),
+
 /***/ "./node_modules/prop-types-exact/build/helpers/isPlainObject.js":
 /*!**********************************************************************!*\
   !*** ./node_modules/prop-types-exact/build/helpers/isPlainObject.js ***!
@@ -3182,7 +3475,7 @@ module.exports = (__webpack_require__(/*! dll-reference dll_2adc2403d89adc16ead0
 
 
 
-var ReactIs = __webpack_require__(/*! react-is */ "./node_modules/prop-types/node_modules/react-is/index.js");
+var ReactIs = __webpack_require__(/*! react-is */ "./node_modules/react-is/index.js");
 var assign = __webpack_require__(/*! object-assign */ "./node_modules/next/dist/build/polyfills/object-assign.js");
 
 var ReactPropTypesSecret = __webpack_require__(/*! ./lib/ReactPropTypesSecret */ "./node_modules/prop-types/lib/ReactPropTypesSecret.js");
@@ -3783,7 +4076,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
  */
 
 if (true) {
-  var ReactIs = __webpack_require__(/*! react-is */ "./node_modules/prop-types/node_modules/react-is/index.js");
+  var ReactIs = __webpack_require__(/*! react-is */ "./node_modules/react-is/index.js");
 
   // By explicitly using `prop-types` you are opting into new development behavior.
   // http://fb.me/prop-types-in-prod
@@ -3802,216 +4095,6 @@ if (true) {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(/*! dll-reference dll_2adc2403d89adc16ead0 */ "dll-reference dll_2adc2403d89adc16ead0"))("./node_modules/prop-types/lib/ReactPropTypesSecret.js");
-
-/***/ }),
-
-/***/ "./node_modules/prop-types/node_modules/react-is/cjs/react-is.development.js":
-/*!***********************************************************************************!*\
-  !*** ./node_modules/prop-types/node_modules/react-is/cjs/react-is.development.js ***!
-  \***********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/** @license React v16.13.1
- * react-is.development.js
- *
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-
-
-
-
-if (true) {
-  (function() {
-'use strict';
-
-// The Symbol used to tag the ReactElement-like types. If there is no native Symbol
-// nor polyfill, then a plain number is used for performance.
-var hasSymbol = typeof Symbol === 'function' && Symbol.for;
-var REACT_ELEMENT_TYPE = hasSymbol ? Symbol.for('react.element') : 0xeac7;
-var REACT_PORTAL_TYPE = hasSymbol ? Symbol.for('react.portal') : 0xeaca;
-var REACT_FRAGMENT_TYPE = hasSymbol ? Symbol.for('react.fragment') : 0xeacb;
-var REACT_STRICT_MODE_TYPE = hasSymbol ? Symbol.for('react.strict_mode') : 0xeacc;
-var REACT_PROFILER_TYPE = hasSymbol ? Symbol.for('react.profiler') : 0xead2;
-var REACT_PROVIDER_TYPE = hasSymbol ? Symbol.for('react.provider') : 0xeacd;
-var REACT_CONTEXT_TYPE = hasSymbol ? Symbol.for('react.context') : 0xeace; // TODO: We don't use AsyncMode or ConcurrentMode anymore. They were temporary
-// (unstable) APIs that have been removed. Can we remove the symbols?
-
-var REACT_ASYNC_MODE_TYPE = hasSymbol ? Symbol.for('react.async_mode') : 0xeacf;
-var REACT_CONCURRENT_MODE_TYPE = hasSymbol ? Symbol.for('react.concurrent_mode') : 0xeacf;
-var REACT_FORWARD_REF_TYPE = hasSymbol ? Symbol.for('react.forward_ref') : 0xead0;
-var REACT_SUSPENSE_TYPE = hasSymbol ? Symbol.for('react.suspense') : 0xead1;
-var REACT_SUSPENSE_LIST_TYPE = hasSymbol ? Symbol.for('react.suspense_list') : 0xead8;
-var REACT_MEMO_TYPE = hasSymbol ? Symbol.for('react.memo') : 0xead3;
-var REACT_LAZY_TYPE = hasSymbol ? Symbol.for('react.lazy') : 0xead4;
-var REACT_BLOCK_TYPE = hasSymbol ? Symbol.for('react.block') : 0xead9;
-var REACT_FUNDAMENTAL_TYPE = hasSymbol ? Symbol.for('react.fundamental') : 0xead5;
-var REACT_RESPONDER_TYPE = hasSymbol ? Symbol.for('react.responder') : 0xead6;
-var REACT_SCOPE_TYPE = hasSymbol ? Symbol.for('react.scope') : 0xead7;
-
-function isValidElementType(type) {
-  return typeof type === 'string' || typeof type === 'function' || // Note: its typeof might be other than 'symbol' or 'number' if it's a polyfill.
-  type === REACT_FRAGMENT_TYPE || type === REACT_CONCURRENT_MODE_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || typeof type === 'object' && type !== null && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || type.$$typeof === REACT_FUNDAMENTAL_TYPE || type.$$typeof === REACT_RESPONDER_TYPE || type.$$typeof === REACT_SCOPE_TYPE || type.$$typeof === REACT_BLOCK_TYPE);
-}
-
-function typeOf(object) {
-  if (typeof object === 'object' && object !== null) {
-    var $$typeof = object.$$typeof;
-
-    switch ($$typeof) {
-      case REACT_ELEMENT_TYPE:
-        var type = object.type;
-
-        switch (type) {
-          case REACT_ASYNC_MODE_TYPE:
-          case REACT_CONCURRENT_MODE_TYPE:
-          case REACT_FRAGMENT_TYPE:
-          case REACT_PROFILER_TYPE:
-          case REACT_STRICT_MODE_TYPE:
-          case REACT_SUSPENSE_TYPE:
-            return type;
-
-          default:
-            var $$typeofType = type && type.$$typeof;
-
-            switch ($$typeofType) {
-              case REACT_CONTEXT_TYPE:
-              case REACT_FORWARD_REF_TYPE:
-              case REACT_LAZY_TYPE:
-              case REACT_MEMO_TYPE:
-              case REACT_PROVIDER_TYPE:
-                return $$typeofType;
-
-              default:
-                return $$typeof;
-            }
-
-        }
-
-      case REACT_PORTAL_TYPE:
-        return $$typeof;
-    }
-  }
-
-  return undefined;
-} // AsyncMode is deprecated along with isAsyncMode
-
-var AsyncMode = REACT_ASYNC_MODE_TYPE;
-var ConcurrentMode = REACT_CONCURRENT_MODE_TYPE;
-var ContextConsumer = REACT_CONTEXT_TYPE;
-var ContextProvider = REACT_PROVIDER_TYPE;
-var Element = REACT_ELEMENT_TYPE;
-var ForwardRef = REACT_FORWARD_REF_TYPE;
-var Fragment = REACT_FRAGMENT_TYPE;
-var Lazy = REACT_LAZY_TYPE;
-var Memo = REACT_MEMO_TYPE;
-var Portal = REACT_PORTAL_TYPE;
-var Profiler = REACT_PROFILER_TYPE;
-var StrictMode = REACT_STRICT_MODE_TYPE;
-var Suspense = REACT_SUSPENSE_TYPE;
-var hasWarnedAboutDeprecatedIsAsyncMode = false; // AsyncMode should be deprecated
-
-function isAsyncMode(object) {
-  {
-    if (!hasWarnedAboutDeprecatedIsAsyncMode) {
-      hasWarnedAboutDeprecatedIsAsyncMode = true; // Using console['warn'] to evade Babel and ESLint
-
-      console['warn']('The ReactIs.isAsyncMode() alias has been deprecated, ' + 'and will be removed in React 17+. Update your code to use ' + 'ReactIs.isConcurrentMode() instead. It has the exact same API.');
-    }
-  }
-
-  return isConcurrentMode(object) || typeOf(object) === REACT_ASYNC_MODE_TYPE;
-}
-function isConcurrentMode(object) {
-  return typeOf(object) === REACT_CONCURRENT_MODE_TYPE;
-}
-function isContextConsumer(object) {
-  return typeOf(object) === REACT_CONTEXT_TYPE;
-}
-function isContextProvider(object) {
-  return typeOf(object) === REACT_PROVIDER_TYPE;
-}
-function isElement(object) {
-  return typeof object === 'object' && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
-}
-function isForwardRef(object) {
-  return typeOf(object) === REACT_FORWARD_REF_TYPE;
-}
-function isFragment(object) {
-  return typeOf(object) === REACT_FRAGMENT_TYPE;
-}
-function isLazy(object) {
-  return typeOf(object) === REACT_LAZY_TYPE;
-}
-function isMemo(object) {
-  return typeOf(object) === REACT_MEMO_TYPE;
-}
-function isPortal(object) {
-  return typeOf(object) === REACT_PORTAL_TYPE;
-}
-function isProfiler(object) {
-  return typeOf(object) === REACT_PROFILER_TYPE;
-}
-function isStrictMode(object) {
-  return typeOf(object) === REACT_STRICT_MODE_TYPE;
-}
-function isSuspense(object) {
-  return typeOf(object) === REACT_SUSPENSE_TYPE;
-}
-
-exports.AsyncMode = AsyncMode;
-exports.ConcurrentMode = ConcurrentMode;
-exports.ContextConsumer = ContextConsumer;
-exports.ContextProvider = ContextProvider;
-exports.Element = Element;
-exports.ForwardRef = ForwardRef;
-exports.Fragment = Fragment;
-exports.Lazy = Lazy;
-exports.Memo = Memo;
-exports.Portal = Portal;
-exports.Profiler = Profiler;
-exports.StrictMode = StrictMode;
-exports.Suspense = Suspense;
-exports.isAsyncMode = isAsyncMode;
-exports.isConcurrentMode = isConcurrentMode;
-exports.isContextConsumer = isContextConsumer;
-exports.isContextProvider = isContextProvider;
-exports.isElement = isElement;
-exports.isForwardRef = isForwardRef;
-exports.isFragment = isFragment;
-exports.isLazy = isLazy;
-exports.isMemo = isMemo;
-exports.isPortal = isPortal;
-exports.isProfiler = isProfiler;
-exports.isStrictMode = isStrictMode;
-exports.isSuspense = isSuspense;
-exports.isValidElementType = isValidElementType;
-exports.typeOf = typeOf;
-  })();
-}
-
-
-/***/ }),
-
-/***/ "./node_modules/prop-types/node_modules/react-is/index.js":
-/*!****************************************************************!*\
-  !*** ./node_modules/prop-types/node_modules/react-is/index.js ***!
-  \****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-if (false) {} else {
-  module.exports = __webpack_require__(/*! ./cjs/react-is.development.js */ "./node_modules/prop-types/node_modules/react-is/cjs/react-is.development.js");
-}
-
 
 /***/ }),
 
@@ -4232,7 +4315,7 @@ exports.encode = exports.stringify = __webpack_require__(/*! ./encode */ "./node
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/** @license React v16.8.6
+/** @license React v16.13.1
  * react-is.development.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -4249,88 +4332,39 @@ if (true) {
   (function() {
 'use strict';
 
-Object.defineProperty(exports, '__esModule', { value: true });
-
 // The Symbol used to tag the ReactElement-like types. If there is no native Symbol
 // nor polyfill, then a plain number is used for performance.
 var hasSymbol = typeof Symbol === 'function' && Symbol.for;
-
 var REACT_ELEMENT_TYPE = hasSymbol ? Symbol.for('react.element') : 0xeac7;
 var REACT_PORTAL_TYPE = hasSymbol ? Symbol.for('react.portal') : 0xeaca;
 var REACT_FRAGMENT_TYPE = hasSymbol ? Symbol.for('react.fragment') : 0xeacb;
 var REACT_STRICT_MODE_TYPE = hasSymbol ? Symbol.for('react.strict_mode') : 0xeacc;
 var REACT_PROFILER_TYPE = hasSymbol ? Symbol.for('react.profiler') : 0xead2;
 var REACT_PROVIDER_TYPE = hasSymbol ? Symbol.for('react.provider') : 0xeacd;
-var REACT_CONTEXT_TYPE = hasSymbol ? Symbol.for('react.context') : 0xeace;
+var REACT_CONTEXT_TYPE = hasSymbol ? Symbol.for('react.context') : 0xeace; // TODO: We don't use AsyncMode or ConcurrentMode anymore. They were temporary
+// (unstable) APIs that have been removed. Can we remove the symbols?
+
 var REACT_ASYNC_MODE_TYPE = hasSymbol ? Symbol.for('react.async_mode') : 0xeacf;
 var REACT_CONCURRENT_MODE_TYPE = hasSymbol ? Symbol.for('react.concurrent_mode') : 0xeacf;
 var REACT_FORWARD_REF_TYPE = hasSymbol ? Symbol.for('react.forward_ref') : 0xead0;
 var REACT_SUSPENSE_TYPE = hasSymbol ? Symbol.for('react.suspense') : 0xead1;
+var REACT_SUSPENSE_LIST_TYPE = hasSymbol ? Symbol.for('react.suspense_list') : 0xead8;
 var REACT_MEMO_TYPE = hasSymbol ? Symbol.for('react.memo') : 0xead3;
 var REACT_LAZY_TYPE = hasSymbol ? Symbol.for('react.lazy') : 0xead4;
+var REACT_BLOCK_TYPE = hasSymbol ? Symbol.for('react.block') : 0xead9;
+var REACT_FUNDAMENTAL_TYPE = hasSymbol ? Symbol.for('react.fundamental') : 0xead5;
+var REACT_RESPONDER_TYPE = hasSymbol ? Symbol.for('react.responder') : 0xead6;
+var REACT_SCOPE_TYPE = hasSymbol ? Symbol.for('react.scope') : 0xead7;
 
 function isValidElementType(type) {
-  return typeof type === 'string' || typeof type === 'function' ||
-  // Note: its typeof might be other than 'symbol' or 'number' if it's a polyfill.
-  type === REACT_FRAGMENT_TYPE || type === REACT_CONCURRENT_MODE_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || typeof type === 'object' && type !== null && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE);
+  return typeof type === 'string' || typeof type === 'function' || // Note: its typeof might be other than 'symbol' or 'number' if it's a polyfill.
+  type === REACT_FRAGMENT_TYPE || type === REACT_CONCURRENT_MODE_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || typeof type === 'object' && type !== null && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || type.$$typeof === REACT_FUNDAMENTAL_TYPE || type.$$typeof === REACT_RESPONDER_TYPE || type.$$typeof === REACT_SCOPE_TYPE || type.$$typeof === REACT_BLOCK_TYPE);
 }
-
-/**
- * Forked from fbjs/warning:
- * https://github.com/facebook/fbjs/blob/e66ba20ad5be433eb54423f2b097d829324d9de6/packages/fbjs/src/__forks__/warning.js
- *
- * Only change is we use console.warn instead of console.error,
- * and do nothing when 'console' is not supported.
- * This really simplifies the code.
- * ---
- * Similar to invariant but only logs a warning if the condition is not met.
- * This can be used to log issues in development environments in critical
- * paths. Removing the logging code for production environments will keep the
- * same logic and follow the same code paths.
- */
-
-var lowPriorityWarning = function () {};
-
-{
-  var printWarning = function (format) {
-    for (var _len = arguments.length, args = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-      args[_key - 1] = arguments[_key];
-    }
-
-    var argIndex = 0;
-    var message = 'Warning: ' + format.replace(/%s/g, function () {
-      return args[argIndex++];
-    });
-    if (typeof console !== 'undefined') {
-      console.warn(message);
-    }
-    try {
-      // --- Welcome to debugging React ---
-      // This error was thrown as a convenience so that you can use this stack
-      // to find the callsite that caused this warning to fire.
-      throw new Error(message);
-    } catch (x) {}
-  };
-
-  lowPriorityWarning = function (condition, format) {
-    if (format === undefined) {
-      throw new Error('`lowPriorityWarning(condition, format, ...args)` requires a warning ' + 'message argument');
-    }
-    if (!condition) {
-      for (var _len2 = arguments.length, args = Array(_len2 > 2 ? _len2 - 2 : 0), _key2 = 2; _key2 < _len2; _key2++) {
-        args[_key2 - 2] = arguments[_key2];
-      }
-
-      printWarning.apply(undefined, [format].concat(args));
-    }
-  };
-}
-
-var lowPriorityWarning$1 = lowPriorityWarning;
 
 function typeOf(object) {
   if (typeof object === 'object' && object !== null) {
     var $$typeof = object.$$typeof;
+
     switch ($$typeof) {
       case REACT_ELEMENT_TYPE:
         var type = object.type;
@@ -4343,29 +4377,32 @@ function typeOf(object) {
           case REACT_STRICT_MODE_TYPE:
           case REACT_SUSPENSE_TYPE:
             return type;
+
           default:
             var $$typeofType = type && type.$$typeof;
 
             switch ($$typeofType) {
               case REACT_CONTEXT_TYPE:
               case REACT_FORWARD_REF_TYPE:
+              case REACT_LAZY_TYPE:
+              case REACT_MEMO_TYPE:
               case REACT_PROVIDER_TYPE:
                 return $$typeofType;
+
               default:
                 return $$typeof;
             }
+
         }
-      case REACT_LAZY_TYPE:
-      case REACT_MEMO_TYPE:
+
       case REACT_PORTAL_TYPE:
         return $$typeof;
     }
   }
 
   return undefined;
-}
+} // AsyncMode is deprecated along with isAsyncMode
 
-// AsyncMode is deprecated along with isAsyncMode
 var AsyncMode = REACT_ASYNC_MODE_TYPE;
 var ConcurrentMode = REACT_CONCURRENT_MODE_TYPE;
 var ContextConsumer = REACT_CONTEXT_TYPE;
@@ -4379,17 +4416,17 @@ var Portal = REACT_PORTAL_TYPE;
 var Profiler = REACT_PROFILER_TYPE;
 var StrictMode = REACT_STRICT_MODE_TYPE;
 var Suspense = REACT_SUSPENSE_TYPE;
+var hasWarnedAboutDeprecatedIsAsyncMode = false; // AsyncMode should be deprecated
 
-var hasWarnedAboutDeprecatedIsAsyncMode = false;
-
-// AsyncMode should be deprecated
 function isAsyncMode(object) {
   {
     if (!hasWarnedAboutDeprecatedIsAsyncMode) {
-      hasWarnedAboutDeprecatedIsAsyncMode = true;
-      lowPriorityWarning$1(false, 'The ReactIs.isAsyncMode() alias has been deprecated, ' + 'and will be removed in React 17+. Update your code to use ' + 'ReactIs.isConcurrentMode() instead. It has the exact same API.');
+      hasWarnedAboutDeprecatedIsAsyncMode = true; // Using console['warn'] to evade Babel and ESLint
+
+      console['warn']('The ReactIs.isAsyncMode() alias has been deprecated, ' + 'and will be removed in React 17+. Update your code to use ' + 'ReactIs.isConcurrentMode() instead. It has the exact same API.');
     }
   }
+
   return isConcurrentMode(object) || typeOf(object) === REACT_ASYNC_MODE_TYPE;
 }
 function isConcurrentMode(object) {
@@ -4429,7 +4466,6 @@ function isSuspense(object) {
   return typeOf(object) === REACT_SUSPENSE_TYPE;
 }
 
-exports.typeOf = typeOf;
 exports.AsyncMode = AsyncMode;
 exports.ConcurrentMode = ConcurrentMode;
 exports.ContextConsumer = ContextConsumer;
@@ -4443,7 +4479,6 @@ exports.Portal = Portal;
 exports.Profiler = Profiler;
 exports.StrictMode = StrictMode;
 exports.Suspense = Suspense;
-exports.isValidElementType = isValidElementType;
 exports.isAsyncMode = isAsyncMode;
 exports.isConcurrentMode = isConcurrentMode;
 exports.isContextConsumer = isContextConsumer;
@@ -4457,6 +4492,8 @@ exports.isPortal = isPortal;
 exports.isProfiler = isProfiler;
 exports.isStrictMode = isStrictMode;
 exports.isSuspense = isSuspense;
+exports.isValidElementType = isValidElementType;
+exports.typeOf = typeOf;
   })();
 }
 
@@ -5535,20 +5572,18 @@ module.exports = function (list, options) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return RootApp; });
 /* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
-/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutProperties */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js");
-/* harmony import */ var _babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
-/* harmony import */ var _babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
-/* harmony import */ var _babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
-/* harmony import */ var _babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
-/* harmony import */ var _babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var next_app__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! next/app */ "./node_modules/next/app.js");
-/* harmony import */ var next_app__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(next_app__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
-/* harmony import */ var _styles_reset_scss__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../styles/reset.scss */ "./styles/reset.scss");
-/* harmony import */ var _styles_reset_scss__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_styles_reset_scss__WEBPACK_IMPORTED_MODULE_10__);
-
+/* harmony import */ var _babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var _babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var next_app__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! next/app */ "./node_modules/next/app.js");
+/* harmony import */ var next_app__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(next_app__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
+/* harmony import */ var _styles_reset_scss__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../styles/reset.scss */ "./styles/reset.scss");
+/* harmony import */ var _styles_reset_scss__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_styles_reset_scss__WEBPACK_IMPORTED_MODULE_9__);
 
 
 
@@ -5556,9 +5591,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var _jsxFileName = "C:\\Users\\SAMSUNG\\Desktop\\html\\netflix_project\\pages\\_app.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement;
+var __jsx = react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement;
 
-function _createSuper(Derived) { return function () { var Super = Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6__["default"])(Derived), result; if (_isNativeReflectConstruct()) { var NewTarget = Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6__["default"])(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return Object(_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_5__["default"])(this, result); }; }
+function _createSuper(Derived) { return function () { var Super = Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__["default"])(Derived), result; if (_isNativeReflectConstruct()) { var NewTarget = Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__["default"])(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return Object(_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__["default"])(this, result); }; }
 
 function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
 
@@ -5568,36 +5603,42 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 
 var RootApp = /*#__PURE__*/function (_App) {
-  Object(_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(RootApp, _App);
+  Object(_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_3__["default"])(RootApp, _App);
 
   var _super = _createSuper(RootApp);
 
   function RootApp() {
-    Object(_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__["default"])(this, RootApp);
+    Object(_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__["default"])(this, RootApp);
 
     return _super.apply(this, arguments);
   }
 
-  Object(_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__["default"])(RootApp, [{
+  Object(_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__["default"])(RootApp, [{
     key: "render",
     value: function render() {
       var _this$props = this.props,
           Component = _this$props.Component,
-          other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(_this$props, ["Component"]);
-
-      return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_9__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, other, this.state, {
+          pageProps = _this$props.pageProps;
+      return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_8__["default"], {
         __self: this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 10,
-          columnNumber: 12
+          columnNumber: 5
         }
-      }));
+      }, __jsx(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageProps, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 11,
+          columnNumber: 9
+        }
+      })));
     }
   }]);
 
   return RootApp;
-}(next_app__WEBPACK_IMPORTED_MODULE_7___default.a);
+}(next_app__WEBPACK_IMPORTED_MODULE_6___default.a);
 
 
 
