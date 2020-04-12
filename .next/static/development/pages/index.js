@@ -150,7 +150,8 @@ var _this = undefined,
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
-var Layout = function Layout(props) {
+var Layout = function Layout(_ref) {
+  var children = _ref.children;
   return __jsx("div", {
     __self: _this,
     __source: {
@@ -165,7 +166,7 @@ var Layout = function Layout(props) {
       lineNumber: 6,
       columnNumber: 9
     }
-  }), props.children);
+  }), children);
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Layout);
@@ -5584,14 +5585,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 var Index = function Index(props) {
-  return __jsx("div", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5,
-      columnNumber: 3
-    }
-  }, __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -5605,7 +5599,7 @@ var Index = function Index(props) {
       lineNumber: 7,
       columnNumber: 7
     }
-  }, "index page")));
+  }, "index page"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Index);

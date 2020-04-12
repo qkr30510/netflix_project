@@ -237,7 +237,9 @@ var _jsxFileName = "C:\\Users\\SAMSUNG\\Desktop\\html\\netflix_project\\componen
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
-const Layout = props => __jsx("div", {
+const Layout = ({
+  children
+}) => __jsx("div", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
@@ -251,7 +253,7 @@ const Layout = props => __jsx("div", {
     lineNumber: 6,
     columnNumber: 9
   }
-}), props.children);
+}), children);
 
 /* harmony default export */ __webpack_exports__["default"] = (Layout);
 
@@ -1952,14 +1954,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-const Index = props => __jsx("div", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 5,
-    columnNumber: 3
-  }
-}, __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
+const Index = props => __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
@@ -1973,7 +1968,7 @@ const Index = props => __jsx("div", {
     lineNumber: 7,
     columnNumber: 7
   }
-}, "index page")));
+}, "index page"));
 
 /* harmony default export */ __webpack_exports__["default"] = (Index);
 
